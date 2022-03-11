@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background: #e5e5e5;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Utility Classes */
+  .container {
+    max-width: 1440px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    font-size: 16px;
+    font-family: Poppins;
+    line-height: 30px;
+  }
+  
+  .large-heading {
+    font-weight: 700;
+    font-size: 48px;
+  }
+  
+  .m-heading {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+  }
+  
+  .bg-light {
+    background: #e5e5e5;
+  }
+  
+  .btn {
+    display: inline-block;
+    color: #000;
+    width: 226px;
+    height: 60px;
+    border: 1px solid;
+    border-radius: 33px;
+    cursor: pointer;
+    margin: 40px auto;
+    font-size: 18px;
+  }
+  
+  .btn-light {
+    background: white;
+  }
+  
+  .btn-dark {
+    background: black;
+    color: white;
+  }
+  
+  /* Navbar */
+  #navbar {
+    display: flex;
+    justify-content: space-around;
+    z-index: 1;
+    align-items: center;
+    height: 100px;
+    background: white;
+  }
+  
+  #navbar ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+  }
+  
+  #navbar ul li a {
+    color: #000;
+    padding: 10px;
+    margin: 0 5px;
+  }
+  
+  #navbar .searchbar input {
+    width: 175px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    border-radius: 33px;
+    background-image: url("./assets/Vector.png");
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+  }
+  
+  /* Main content */
+  #main-content {
+    background-color: #e5e5e5;
+    padding: 10px 0px;
+    height: auto;
+  }
+  #main-content .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  #main-content .main-heading {
+    margin-top: 100px;
+    color: #67599c;
+    font-size: 48px;
+  }
+  
+  #main-content .shoe-img {
+    width: 609px;
+    height: 570px;
+    margin: 100px auto 100px auto;
+  }
+  
+  #main-content .content {
+    margin-left: 100px;
+    margin-right: 100px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #main-content .in-box {
+    position: relative;
+  }
+  
+  #main-content .underline {
+    position: absolute;
+    width: 450px;
+    height: 31px;
+    top: 30px;
+    left: -20px;
+    background: rgba(103, 89, 156, 0.2);
+    border-radius: 18px;
+  }
+  
+  #main-content .intro-content {
+    color: #000;
+    line-height: 20px;
+  }
+  
+  #main-content .text-content {
+    margin-top: 30px;
+    line-height: 30px;
+  }
+  
+  #main-content .money {
+    align-items: flex-start;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  #main-content .light-text {
+    color: rgba(0, 0, 0, 0.5);
+  }
+  
+  #main-content .size {
+    display: flex;
+    border-style: solid;
+    text-align: center;
+    justify-content: center;
+    width: 140px;
+    height: 42px;
+    margin: 8px;
+    background: rgba(255, 255, 255, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.14);
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding-top: 2px;
+  }
+  
+  #main-content .size-container {
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 4;
+  }
+  
+  /* Media Query */
+  @media (max-width: 1024px) {
+    body {
+      background: #fff;
+    }
+  
+    .btn {
+      display: block;
+      color: #000;
+      width: 100%;
+      height: 60px;
+      border: 1px solid;
+      border-radius: 33px;
+      cursor: pointer;
+      margin: 15px auto;
+    }
+  
+    .btn-light {
+      background: white;
+    }
+  
+    .btn-dark {
+      background: black;
+      color: white;
+    }
+  
+    /* Navbar */
+    #navbar .logo img {
+      width: 38px;
+      height: 22px;
+    }
+  
+    input {
+      display: none;
+    }
+    .searchbar {
+      width: 13px;
+      height: 16px;
+      background: url(./assets/Vector.png) no-repeat;
+      object-fit: cover;
+    }
+  
+    #main-content {
+      background: #e5e5e5;
+    }
+    #main-content .content {
+      margin-left: 30px;
+      margin-right: 30px;
+    }
+  
+    #main-content .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    #main-content .main-heading {
+      margin-top: 0px;
+      font-size: 28px;
+    }
+  
+    #main-content .underline {
+      width: 267px;
+      height: 21px;
+      left: -15px;
+      top: 20px;
+    }
+  
+    #main-content .shoe-img {
+      width: 80%;
+      height: auto;
+      margin-bottom: 40px;
+    }
+  
+    #main-content .text-content {
+      margin-top: 30px;
+    }
+  
+    #main-content .size {
+      width: 95px;
+      height: 42px;
+    }
+  
+    #main-content .money {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+  
+    .class-one {
+      order: 1;
+    }
+    .class-two {
+      order: 5;
+    }
+    .class-three {
+      order: 2;
+    }
+    .class-four {
+      order: 3;
+    }
+    .class-five {
+      order: 4;
+      margin-top: 30px;
+    }
+    
+  }
+  
